@@ -16,17 +16,19 @@ const Favorite = () => {
   return (
     <div className={styles.favorite}>
       <PageTitle>favorite</PageTitle>
-      <div className={styles.column}>
-        <ul className={styles.cards}>
-          {favoriteCards.map(card => (
-            <Card
-              key={card.id}
-              id={card.id}
-              title={card.title}
-              isFavorite={card.isFavorite}
-            />
-          ))}
-        </ul>
+      <div className={styles.columnWrapper}>
+        <div className={styles.column}>
+          <ul className={styles.cards}>
+            {favoriteCards.map((card) => (
+              <Card
+                key={card.id}
+                id={card.id}
+                title={card.title}
+                isFavorite={card.isFavorite}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
