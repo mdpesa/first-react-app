@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addList } from '../../redux/store';
+import { addList } from '../../redux/listsRedux';
 import TextInput from '../TextInput/TextInput';
 import styles from './ListForm.module.scss';
-import Button
- from '../Button/Button';
+import Button from '../Button/Button';
 
 const ListForm = (props) => {
   const dispatch = useDispatch();
